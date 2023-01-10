@@ -19,13 +19,12 @@ sudo systemctl start jenkins
 ---------------------------------------------------
 
 Terraform installation:
-sudo apt update
+sudo wget https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip
 
-sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com focal main"
+apt install unzip
 
-curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg
-sudo install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/
+sudo unzip terraform_0.14.7_linux_amd64.zip
 
-sudo apt update
+sudo mv terraform /usr/local/bin/
 
-sudo apt install terraform
+terraform -v
