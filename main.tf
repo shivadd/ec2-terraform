@@ -14,7 +14,6 @@ module "ec2_instance" {
   key_name               = "projecttest"
   monitoring             = true
   vpc_security_group_ids = ["sg-0dd290bf175c8d27f"]
-  subnet_id              = "subnet-026c58f1c05a1b7db"
   
   tags = {
     Name = "terraform-instance"
