@@ -28,6 +28,8 @@ sudo unzip terraform_0.14.7_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 
 terraform -v
+apt update -y
+apt install awscli
 
 
 Backend main.tf
