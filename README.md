@@ -33,6 +33,8 @@ apt update -y
 
 apt install awscli
 
+aws configure
+
 
 
 Backend main.tf
